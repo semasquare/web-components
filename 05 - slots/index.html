@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web components - User Card</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h1>Web components - User Card</h1>
+    <user-card
+      name="Max Mustermann"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="mail">max.mustermann@test.de</div>
+      <div slot="phone">+49-0234...</div>
+    </user-card>
+    <user-card
+      name="Eva Mustermann"
+      avatar="https://randomuser.me/api/portraits/women/1.jpg"
+    >
+    <div slot="mail">eva.mustermann@test.de</div>
+    <div slot="phone">+49-0234...</div>
+  </user-card>
+  </body>
+</html>

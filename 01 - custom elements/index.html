@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web components - User Card</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      user-card::part(title) {
+        color: violet;
+        font-weight: 100;
+      }
+    </style>
+    <script defer src="main.js"></script>    
+  </head>
+  <body>
+    <h1>Web components - User Card</h1>
+    <user-card name="Sebastian Weigel" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+      <div slot="mail">sebastian.weigel@semasquare.com</div>
+      <div slot="phone"><i>+49 234 ...</i></div>
+    </user-card>
+    <user-card name="Sebastian Weigel" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+      <div slot="mail">sebastian.weigel@semasquare.com</div>
+      <div slot="phone"><i>+49 234 ...</i></div>
+    </user-card>
+    
+  </body>
+</html>
